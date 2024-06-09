@@ -1,0 +1,227 @@
+<html>
+    <head>
+        <title>Registration Page</title>
+        <style>
+             body {
+        background-image: url(img3.jpeg);
+        /* opacity: 0.8; */
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      body::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(img3.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(2px);
+  z-index: -1;
+}
+.one{
+    /* background-image: url(img4jpg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; */
+    /* background: white; */
+    color: yellow;
+    position: relative;
+    width: 450px;
+    z-index: 10;
+    margin-top: 30px;
+    justify-content: center;
+}
+nav {
+        background-color: rgb(245, 238, 186);
+        color: black;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 35px;
+       justify-content: center;
+      }
+      
+        nav ul {
+            list-style-type: none;
+            margin-top: 0;
+            padding: 0;
+            /* justify-content: center; */
+        }
+        #h{
+        color: yellow;
+        text-align: center; 
+        margin-top: 35px;
+        text-shadow: 2px 2px 2px rgb(230, 230, 2);
+      }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+            padding-bottom: 8px;
+            font-size: larger;
+        }
+        nav ul li a {
+            color: rgb(82, 76, 76);
+            text-decoration: none;
+            margin-left: 50px;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        h1{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-shadow: 5px 5px 10px  black ,10px 10px 20px gray;
+        }
+        body ,h1,h2,h3,ul,li{
+        margin: 5;
+        padding: 5;
+        }
+        #foot {
+        background-color: rgb(245, 238, 186);
+        color: black;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 5px;
+        height: 95px;
+      }
+        @media Screen and (min-width:1164px) and (max-width:1258px){
+            body{
+            background: url(sch.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: beige;
+            margin: 0px;
+            }
+            nav {
+            background-color: rgb(245, 238, 186);
+            color: rgb(87, 85, 85);
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            }
+            #foot{
+            background-color: rgb(245, 238, 186);
+            color: rgb(87, 85, 85);
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            }
+        }
+        @media Screen and (min-width:1000px) and (max-width:1163px){
+            body{
+            background: url(sch.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: rgb(61, 7, 111);
+            margin: 0px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            
+            nav ul li a {
+            color: white;
+            /* background-color: black; */
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            #h{
+        color: rgb(130, 14, 246);
+        text-align: center; 
+        margin-top: 35px;
+        text-shadow: 2px 2px 2px rgb(130, 14, 246);
+      }
+      .one{
+        color: rgb(130, 14, 246);
+      }
+            nav {
+                background-color: rgb(130, 14, 246);
+            }
+            #foot{
+                color: white;
+            background-color: rgb(130, 14, 246);
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+        }
+        @media Screen and (min-width:850px) and (max-width:999px){
+            body{
+            background: url(sch.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: black;
+            margin: 0px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            #h{
+        color: white;
+        text-align: center; 
+        margin-top: 35px;
+        text-shadow: 2px 2px 2px white;
+      }
+      .one{
+        color: white;
+      }
+            nav ul li a {
+            color: white;
+            /* background-color: black; */
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            nav {
+                background-color: black;
+                color: white;
+            }
+            #foot{
+                background-color: black;
+            color: white;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+        }
+
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="registration.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+                <li><a href="aboutus.html">About</a></li>
+            </ul>
+        </nav>
+        <center>
+            <h1 id="h">GetFit GYM</h1>
+        <div class="one">
+        <form action="login.html">
+            <center>
+                
+                <h2>Registration Page</h2>
+           <span style="font-weight: bold; margin: 5px;">First Name: </span><input type="text" style="margin: 5px;" placeholder="First Name:"><br>
+           <span style="font-weight:bold; margin: 5px">Last Name: </span></h4><input type="text" style="margin: 5px;" placeholder="Last Name"><br>
+           <span style="font-size: bold;">Gender Name</span> <br>
+           <input type="radio" name="Female" id="">Female
+           <br><input type="radio" name="Male" id="">Male <br>
+           <span style="font-weight: bold; margin: 5px;">Mobileno:</span><input type="text" style="margin: 5px;"name="mobileno" placeholder="Mobileno"><br>
+           <span style="font-weight: bold;">Date of joining: <input type="date" name="date" id="" placeholder="dd-mm-yyyy"></span><br>
+           <span style="font-size: bold;">present weight</span> <br>
+           <input type="checkbox" name="Reading" id="">40-50 <br>
+           <input type="checkbox" name="Playing" id="">51-60 <br>
+           <input type="checkbox" name="Cooking" id="">61-70 <br>
+           <input type="checkbox" name="Gardening" id="">71-80 <br>
+           <span style="font-size: bold;">Age</span>
+           <select name="age">
+            <option value="20-25">20-25</option>
+            <option value="26-30">26-30</option>
+            <option value="31-35">31-35</option>
+            <option value="36-40">36-40</option>
+            <option value="41-45">41-45</option>
+           </select> <br>
+           <span style="font-size: bold;font-weight: bold;">Address</span> <br><textarea name="30" id="" cols="50" rows="5" placeholder="Enter your address"></textarea><br>
+           <input type="submit" value="submit" style="margin: 8px;">
+        </form>
+    </div>
+    </center>
+</center>
+<footer id="foot" style="height: 35px; ">
+    <center><p>&copy; 2024 GetFit GYM. All rights reserved.</p></center>
+    
+  </footer>
+    </body>
+</html>

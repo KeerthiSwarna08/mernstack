@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>confirmation</title>
+    <style>
+        body::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(images/gym5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: scale-down;
+  /* filter: blur(2px); */
+  z-index: -1;
+  /* background: rgba(0,0,0,0.4); */
+}
+        .one {
+        height: 550px;
+        /* background-color: red;
+            width: 350px; */
+        margin-top: 130px;
+        color: black;
+        height: fit-content;
+        /* width: 30%; */
+        
+      }
+      #detail {
+        font-size: medium;
+        font-weight: bold;
+        margin: 5px;
+      }
+      #name,
+      #number,
+      #email,
+      #message {
+        margin: 8px;
+      }
+      button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 5px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 15%;
+  margin-left: auto;
+  margin-bottom: 5px;
+  font-size: 18px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: white;
+}
+    </style>
+    <script>
+      function validation()
+       {
+      if (isEmpty(document.getElementById('data_2').value.trim())) {
+      alert('Name is required!');
+      return false;
+      }
+
+      if (isEmpty(document.getElementById('data_3').value.trim())) {
+      alert('Phone is required!');
+      return false;
+      }
+
+      if (isEmpty(document.getElementById('data_4').value.trim())) {
+      alert('UPI is Required!');
+      return false;
+      }
+      function isEmpty(str) { return (str.length === 0 || !str.trim()); }
+          function validateEmail(email) {
+          var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,15}(?:\.[a-z]{2})?)$/i;
+          return isEmpty(email) || re.test(email);
+  }
+}
+  </script>
+</head>
+
+<body>
+    <form action="afterpurchase.html" method="get" onsubmit="return validation();">
+        <center>
+            <div class="out-box">
+  <div class="one">
+    <h1>GetFit GYM</h1>
+    <h1>Billing</h1>
+    <div id="name">
+      <span style="font-weight: bold; margin: 5px;">First Name: </span><span style="color:white;"> *</span><input type="text" style="margin: 5px;" placeholder="First Name:" id="data_2" name="data_2" class="form-control"><br>
+    </div>
+    <!-- <div id="number"> -->
+      <span style="font-weight: bold; margin: 5px;">Mobileno:</span><span style="color:white;"> *</span><input type="text" style="margin: 5px;"name="mobileno" placeholder="Mobileno" id="data_3" name="data_3" class="form-control"><br>
+    <!-- </div> -->
+    <div id="email">
+      <span id="detail">Email:</span><input type="text"  placeholder="Email" class="form-control" list="email" />
+      <datalist id="email">
+        <option value="ram@gamil.com"></option>
+      <option value="ramkumar@yahoo.com"></option>
+      <option value="ramkumar@hotmail.com"></option>
+      <option value="ramkumar123@gmail.com"></option>
+           </datalist>
+           <div id="number">
+            <span id="detail">UPI ID:</span><span style="color: red;"> *</span><input type="text" id="data_4" name="data_4" class="form-control" placeholder="Enter upi id"/><br>
+            <span style="margin: 15px; color: red;">This includes 18% GST</span>
+          </div>
+          <button><a href="afterpurchase.html">Buy Now</a></button>
+          </div>
+        </div>
+</body>
+</html>

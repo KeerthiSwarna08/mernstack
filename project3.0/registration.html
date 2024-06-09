@@ -1,0 +1,152 @@
+<html>
+    <head>
+        <title>Registration Page</title>
+        <style>
+             body{
+            background: url(sch.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: black;
+            margin: 0px;
+            }
+        /* .one{
+            margin-top: 20px;
+            } */
+        nav {
+            background-color: rgb(245, 238, 186);
+            color: rgb(87, 85, 85);
+            padding: 10px;
+            margin: 0px;
+            height: 30px;
+            /* width: 100%;
+            margin-bottom: 150px; */
+        }
+        nav ul {
+            list-style-type: none;
+            margin-top: 0;
+            padding: 0;
+            /* justify-content: center; */
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+            padding-bottom: 8px;
+            font-size: larger;
+        }
+        nav ul li a {
+            color: rgb(82, 76, 76);
+            text-decoration: none;
+            margin-left: 50px;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        h1{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-shadow: 5px 5px 10px  black ,10px 10px 20px gray;
+        }
+        body ,h1,h2,h3,ul,li{
+        margin: 5;
+        padding: 5;
+        }
+        #foot{
+            background-color: rgb(245, 238, 186);
+            color: rgb(87, 85, 85);
+            position: static;
+            margin-top: 50px;
+            margin-bottom: 120px;
+            /* font-size: larger; */
+            height: 85px;
+        }
+        @media Screen and (min-width:1164px) and (max-width:1258px){
+            nav {
+            background-color: rgb(245, 238, 186);
+            color: rgb(87, 85, 85);
+            }
+            #foot{
+            background-color: rgb(245, 238, 186);
+            color: rgb(87, 85, 85);
+            }
+        }
+        @media Screen and (min-width:1000px) and (max-width:1163px){
+            body{
+            color: rgb(61, 7, 111);
+            }
+            nav ul li a {
+            color: white;
+            }
+            nav {
+                background-color: rgb(130, 14, 246);
+            }
+            #foot{
+                color: white;
+            background-color: rgb(130, 14, 246);
+            }
+        }
+        @media Screen and (min-width:850px) and (max-width:999px){
+            body{
+            color: black;
+            }
+
+            nav ul li a {
+            color: white;
+        
+            }
+            nav {
+                background-color: black;
+                color: white;
+            }
+            #foot{
+            background-color: black;
+            color: white;
+            }
+        }
+
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="registration.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="/project3/contactus.html">Contact</a></li>
+                <li><a href="aboutus.html">About</a></li>
+            </ul>
+        </nav>
+        <div class="one">
+        <form action="login.html">
+            <marquee behavior="" direction="linear" class="blink"><h1>Gowtham Model School</h1></marquee>
+            <center><h1>Admission Page</h1>
+           <span style="font-weight: bold; margin: 5px;">First Name: </span></h4><input type="text" style="margin: 5px;" autofocus placeholder="First Name"><br>
+           <span style="font-weight:bold; margin: 5px">Last Name: </span></h4><input type="text" style="margin: 5px;" placeholder="Last Name"><br>
+           <span style="font-weight: bold;">Date of birth: <input type="date" name="date" id="" placeholder="dd-mm-yyyy"></span><br>
+           <span style="font-weight: bold;">Gender Name</span>
+           <input type="radio" name="Female" id="">Female
+           <input type="radio" name="Male" id="">Male <br>
+           <span style="font-weight: bold; margin: 5px;">Mobileno:</span><input type="text" style="margin: 5px;"name="mobileno" placeholder="Mobileno"><br>
+           <span style="font-weight: bold; margin: 5px;">Mother Name:</span><input type="text" style="margin: 5px;"name="mobileno" placeholder="Mother Name"><br>
+           <span style="font-weight: bold; margin: 5px;">Father Name:</span><input type="text" style="margin: 5px;"name="mobileno" placeholder="Father Name"><br>
+           <span style="font-weight: bold;">Hobbies</span><br>
+           <input type="checkbox" name="Reading" id="">Reading <br>
+           <input type="checkbox" name="Playing" id="">Playing <br>
+           <input type="checkbox" name="Gardening" id="">Gardening <br>
+           <span style="font-weight: bold;">Class</span>
+           <select name="classes">
+            <option value="9-10">9-10</option>
+            <option value="6-8">6-8</option>
+            <option value="1-5">1-5</option>
+            <option value="kindergarden">kindergarden</option>
+            <option value="playschool">playschool</option>
+           </select><br>
+           <span style="font-weight: bold; margin-top: 5px;">Address:</span><br><textarea name="30" id="" cols="50" rows="5"></textarea><br>
+           <input type="submit" value="submit" style="margin: 5px;">
+        </form>
+    
+    </center>
+</div>
+<footer id="foot" style="height: 35px; ">
+    <center><p>&copy; 2024 Gowtham Model School. All rights reserved.</p></center>
+    
+  </footer>
+    </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Checkbox Validation</title>
+</head>
+<body>
+  <h1>Checkbox Validation</h1>
+  <form action="LoginSuccess.html" "checkboxForm" onsubmit="return validateForm()">
+    <label>
+      <input type="checkbox" name="interest" value="coding"> Coding
+    </label><br>
+
+    <label>
+      <input type="checkbox" name="interest" value="reading"> Reading
+    </label><br>
+
+    <label>
+      <input type="checkbox" name="interest" value="gaming"> Gaming
+    </label><br>
+
+    <input type="submit" value="Submit">
+  </form>
+
+  <script>
+    function validateForm() {
+      const checkboxes = document.getElementsByName('interest');
+      let checkedCount = 0;
+
+      // Count how many checkboxes are checked
+      for (let i = 0; i < checkboxes.length; i++) {
+        if (checkboxes[i].checked) {
+          checkedCount++;
+        }
+      }
+
+      // Check if at least one checkbox is checked
+      if (checkedCount === 0) {
+        alert("Please select at least one interest.");
+        return false;
+      }
+
+      return true;
+    }
+  </script>
+</body>
+</html>
+
+

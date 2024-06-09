@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contactus</title>
+    <style>
+       body{
+            background: url(sch.jpg);
+            background-size: 50vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0px;
+            height: 70%;
+            }
+      
+      .one {
+        height: 450px;
+        /* background-color: red;
+            width: 350px; */
+        margin-top: 45px;
+      }
+      #detail {
+        font-size: medium;
+        font-weight: bold;
+        margin: 5px;
+      }
+      #name,
+      #number,
+      #email,
+      #message {
+        margin: 8px;
+      }
+      nav {
+            background-color: rgb(245, 238, 186);
+            color: rgb(87, 85, 85);
+            padding: 10px;
+            /* margin: 0px; */
+            position: relative;
+            height: 30px;
+            /* width: 100%;
+            margin-bottom: 150px; */
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+            font-size: larger;
+        }
+        nav ul li a {
+            color: rgb(82, 76, 76);
+            text-decoration: none;
+            margin-left: 50px;
+            padding-top: 28px;
+
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        h1{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body ,h1,h2,h3,ul,li{
+        margin: 5;
+        padding: 5;
+        }
+        #foot{
+            background-color: rgb(245, 238, 186);
+            position: static;
+            font-size: larger;
+            margin-top: 92px;
+            margin-bottom: 0;
+            height: 45px;
+        }
+        @media Screen and (min-width:1164px) and (max-width:1258px){
+            nav {
+            background-color: rgb(245, 238, 186);
+            color: rgb(87, 85, 85);
+            }
+            #foot{
+            background-color: rgb(245, 238, 186);
+            color: rgb(87, 85, 85);
+            }
+        }
+        @media Screen and (min-width:1000px) and (max-width:1163px){
+            body{
+            color: rgb(61, 7, 111);
+            }
+            nav ul li a {
+            color: white;
+            }
+            nav {
+                background-color: rgb(130, 14, 246);
+            }
+            #foot{
+                color: white;
+            background-color: rgb(130, 14, 246);
+            }
+        }
+        @media Screen and (min-width:850px) and (max-width:999px){
+            body{
+            color: black;
+            }
+
+            nav ul li a {
+            color: white;
+        
+            }
+            nav {
+                background-color: black;
+                color: white;
+            }
+            #foot{
+            background-color: black;
+            color: white;
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="registration.html">Home</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="contactus.html">Contact</a></li>
+        <li><a href="aboutus.html">About</a></li>
+      </ul>
+  </nav>
+        <form action="login.html">
+            <center>
+      <div class="one">
+        <marquee behavior="" direction="linear" class="blink"><h1>Gowtham Model School</h1></marquee>
+        <h1>Contact Us</h1>
+        <div id="name">
+          <span id="detail">Full Name:</span><input type="text" autofocus placeholder="Full Name"><br>
+        </div>
+        <div id="number">
+          <span id="detail">Phone Number:</span><input type="text" placeholder="Enter your number"><br>
+        </div>
+        <div id="class"><span id="detail">class:</span><input type="text" placeholder="Enter your class"><br></div>
+        <div id="email">
+          <span id="detail" >Email:</span>
+          <input type="text" name="email" list="email" placeholder="Email"><br />
+          <datalist id="email">
+            <option value="ram@gamil.com"></option>
+          <option value="ramkumar@yahoo.com"></option>
+          <option value="ramkumar@hotmail.com"></option>
+          <option value="ramkumar123@gmail.com"></option>
+               
+     </datalist>
+        </div>
+        <div id="Message">
+          <span id="detail">Message:</span><br />
+          <textarea name="text" id="" rows="5" cols="20"></textarea><br>
+          <input type="submit" value="send" style="margin: 5px;width: 75px;height: 25px;"/> 
+        </div>
+      </div>
+    
+    </center>
+</form>
+<footer id="foot">
+  <center><p>&copy; 2024 Gowtham Model School. All rights reserved.</p></center>
+  
+</footer>
+  </body>
+</html>

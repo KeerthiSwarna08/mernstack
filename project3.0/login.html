@@ -1,0 +1,131 @@
+<html>
+    <head>
+        <title>Login page</title>
+        <style>
+            .one{
+                margin: 5px;
+            }
+            body{
+
+    background: url(sch.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.mar{
+    margin-top:60px;
+    text-align: left;
+}
+nav {
+            background-color: rgb(245, 238, 186);
+            color: rgb(87, 85, 85);
+            padding: 10px;
+            margin-top: 5px;
+            position: relative;
+            height: 30px;
+            /* width: 100%;
+            margin-bottom: 150px; */
+        }
+        nav ul {
+            list-style-type: none;
+            margin-top: 0;
+            padding: 0;
+            justify-content: center;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+            font-size: larger;
+        }
+        nav ul li a {
+            color: rgb(82, 76, 76);
+            text-decoration: none;
+            margin-left: 50px;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        #foot{
+            background-color: rgb(245, 238, 186);
+            position: static;
+            margin-top: 238px;
+            height: 85px;
+            font-size: larger;
+            text-align: center;
+            justify-content: center;
+        }
+        @media Screen and (min-width:1164px) and (max-width:1258px){
+            nav {
+            background-color: rgb(245, 238, 186);
+            color: rgb(87, 85, 85);
+            }
+            #foot{
+            background-color: rgb(245, 238, 186);
+            color: rgb(87, 85, 85);
+            }
+        }
+        @media Screen and (min-width:1000px) and (max-width:1163px){
+            body{
+            color: rgb(61, 7, 111);
+            }
+            nav ul li a {
+            color: white;
+            }
+            nav {
+                background-color: rgb(130, 14, 246);
+            }
+            #foot{
+                color: white;
+            background-color: rgb(130, 14, 246);
+            }
+        }
+        @media Screen and (min-width:850px) and (max-width:999px){
+            body{
+            color: black;
+            }
+
+            nav ul li a {
+            color: white;
+        
+            }
+            nav {
+                background-color: black;
+                color: white;
+            }
+            #foot{
+            background-color: black;
+            color: white;
+            }
+        }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="registration.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+                <li><a href="aboutus.html">About</a></li>
+            </ul>
+        </nav>
+        <div class="mar">
+        <form action="contactus.html"> 
+            <marquee behavior="" direction="linear" class="blink"><h1>Gowtham Model School</h1></marquee>
+            <center><h1>Login Page</h1>
+            <span style="font-weight: bold;">Username: </span><input type="text" class="one" autofocus placeholder="username"><br>
+            <span style="font-weight: bold;">Password: </span><input type="password" name="pass" class="one" placeholder="Password"><br>
+            
+            <span style="font-weight: bold;">Email: </span> <input type="text" name="email" id="" placeholder=" Enter Email"><br>
+            <input type="submit" value="submit" style="margin: 5px;">
+
+        </center>
+        </form>
+    </div>
+    <footer id="foot">
+        <center><p style="padding: 9px;">&copy; 2024 Gowtham Model School. All rights reserved.</p></center>
+        
+      </footer>
+    </body>
+</html>

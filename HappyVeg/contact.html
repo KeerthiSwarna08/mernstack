@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bootstrap Example</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="style.css">
+<style>
+
+   
+
+.bg{
+     border: 5px skyblue;
+     display: flex;
+     justify-content: center;
+     background-image: url(images/conta.jpg);
+     height:450px;
+     width: 1300px;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+    
+ }
+ 
+</style>
+
+
+</head>
+<body>
+    <header>
+        <div class="header-2">
+            <div id="menu-bar" class="fas fa-bars"></div>
+            <nav class="navbar">
+                <a href="home.html" class="btn" role="button" style="border: green;" >HOME</a>
+                <a href="Registration-css.html" class="btn btn-info" role="button" style="border: green;" >ACCOUNT CREATION</a>
+                <a href="loginpage.html" class="btn btn-info" role="button" style="border: green;">LOGIN</a>
+                <a href="veg.html" class="btn btn-info" role="button" style="border: green;">VEGETABLES</a>
+                <a href="offerpage.html" class="btn btn-info" role="button" style="border: green;" >OFFER</a>
+                <a href="contact.html" class="btn btn-info" role="button" style="border: green;" >CONTACT US</a>
+            </nav>    
+        </div>
+    
+    </header>
+    
+        <div class="bg">
+        
+            <form action="ContactSuccess.html">
+         <h1 align="center"><strong>CONTACT US</strong></h1>
+          <p>  <strong>Full Name:</strong>
+            <input type= "text" name="fname" >
+          
+          <p><strong>Phone number:</strong>
+              <input type="tel" name="phone" pattern="^\d{10}$" required>
+          </p>
+          <p><strong>Email:</strong>
+            <input type="email" name="Email" required>
+        </p>
+
+          <p><strong>Message:</strong>
+          </p>  
+        <p>
+        <textarea placeholder="message" name="" id="" cols="30" rows="10"></textarea>
+
+       </p>
+          </hr>
+          
+            <p>
+                <strong><input type="submit" value="SEND"></strong>
+                
+            </p>
+            
+        
+        </form>
+    </div>
+    </body>
+</html>

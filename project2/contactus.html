@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contactus</title>
+    <style>
+      body {
+        background-image: url(/project2/images/img3.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      body::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(/project2/images/img3.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(2px);
+  z-index: -1;
+      }
+      .one {
+        height: 550px;
+        /* background-color: red;
+            width: 350px; */
+        margin-top: 130px;
+        color: yellow;
+      }
+      #detail {
+        font-size: medium;
+        font-weight: bold;
+        margin: 5px;
+      }
+      #name,
+      #number,
+      #email,
+      #message {
+        margin: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    
+        <form action="loginSuccess.html">
+            <center>
+      <div class="one">
+        <h1>GetFit GYM</h1>
+        <h1>Contact Us</h1>
+        <div id="name">
+          <span id="detail">Full Name:</span><input type="text" /><br>
+        </div>
+        <div id="number">
+          <span id="detail">Phone Number:</span><input type="text" /><br>
+        </div>
+        <div id="email">
+          <span id="detail">Email:</span><input type="text" name="email" id="email" list="email" />
+          <datalist id="email">
+            <option value="ram@gamil.com"></option>
+          <option value="ramkumar@yahoo.com"></option>
+          <option value="ramkumar@hotmail.com"></option>
+          <option value="ramkumar123@gmail.com"></option>
+               
+     </datalist>
+          <br />
+        </div>
+        <div id="Message">
+          <span id="detail">Message:</span><br />
+          <textarea name="text" id="" rows="5" cols="20"></textarea><br>
+          <input type="submit" value="send" style="margin: 5px;width: 75px;height: 25px;"/> 
+        </div>
+      </div>
+    
+    </center>
+</form>
+  </body>
+</html>

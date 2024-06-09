@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>CSS3 Animation</title>
+    <style>
+      .box {
+        margin: 50px;
+        width: 155px;
+        height: 140px;
+        background: url("shared_globe.jpeg") no-repeat;
+        position: relative;
+        animation: repeatit 2s linear 0s infinite alternate;
+      }
+      @keyframes repeatit {
+        from {
+          left: 0;
+        }
+        to {
+          left: 50%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>

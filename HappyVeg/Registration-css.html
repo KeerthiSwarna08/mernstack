@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bootstrap Example</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="style.css">
+<style>
+              
+    .bg{
+     border: 5px skyblue;
+     display: flex;
+     justify-content: center;
+     font-size: large;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     background-image: url(images/vegdark.jpg);
+     height: 600px;
+     width: 1300px;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+ }
+</style>
+<script>
+ function validateForm() {
+     let x= document.forms["myForm"]
+     ["fname"].value;
+     if(x == ""){
+         alert("You must enter a Username");
+         return false;
+     }
+     let y= document.forms["myForm"]
+     ["gender"].value;
+
+     if(y == "Male" || y == "Female"){
+         return true;}
+     else{
+         alert("You must select gender");
+         return false;
+     }
+     let z= document.forms["myForm"]
+     ["Country"].value;
+     if(z == "Select"){
+         alert("You must select your Country");
+         return false;
+     }
+     
+ }
+</script>
+
+</head>
+<body>
+    <header>
+        <div class="header-2">
+            <div id="menu-bar" class="fas fa-bars"></div>
+            <nav class="navbar">
+                <a href="home.html" class="btn" role="button" style="border: green;" >HOME</a>
+                <a href="Registration-css.html" class="btn btn-info" role="button" style="border: green;" >ACCOUNT CREATION</a>
+                <a href="loginpage.html" class="btn btn-info" role="button" style="border: green;">LOGIN</a>
+                <a href="veg.html" class="btn btn-info" role="button" style="border: green;">VEGETABLES</a>
+                <a href="offerpage.html" class="btn btn-info" role="button" style="border: green;" >OFFER</a>
+                <a href="contact.html" class="btn btn-info" role="button" style="border: green;" >CONTACT US</a>
+            </nav>    
+        </div>
+    
+    </header>
+       
+
+        <div class="bg">
+        <form name="myForm" action="RegisterSuccess.html" onsubmit="return validateForm()" method="post">
+            <h1 align="center" style="color: white;">CREATE YOUR PROFILE</h1>
+          <p style="color: white;">  FULL NAME :
+            <input type="text" name="fname" style="color: black;">
+          </p>
+          
+          <p style="color: white;">GENDER :
+              <input type="radio" name="gender" value="Male" style="color: black;">Male
+              <input type="radio" name="gender" value="Female" style="color: black;">Female<br>
+          </p> 
+
+          <p style="color: white;">PHONE NUMBER :
+              <input type="tel" name="phone" pattern="^\d{10}$"  style="color: black;" required >
+          </p>
+
+          <p style="color: white;">COUNTRY :
+              <select name = "Country" style="color: black;" required>
+                  <option value="Select" style="color: black;" >Select</option>
+                  <option value="India" style="color: black;" >India</option>
+                  <option value = "Pakistan" style="color: black;" >Pakistan</option>
+                  <option value ="America" style="color: black;">America</option>
+                  <option value="UAE" style="color: black;" >United Arab Emirates</option>
+              </select>
+          </p>
+
+          <p style="color: white;">HOME ADDRESS:
+                <textarea name="address" cols="35" rows="2" style="color: black;" required></textarea>              
+          </p>
+
+          </hr>
+          <p style="color: white;">.........................   LOGIN DETAILS  .....................</p>
+          <p style="color: white;">EMAIL :
+              <input type="email" name="Email" style="color: black;" required>
+          </p>
+          <p style="color: white;"> PASSWORD
+              <input type = "password" name="password"  style="color: black;" required>
+          </p>
+
+          <p>
+             <strong><input type="submit" style="color: green;"  value="SUBMIT"></strong> 
+                
+            </p>
+            
+        </form>
+    </div>
+    </body>
+</html>

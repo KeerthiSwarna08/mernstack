@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    nav {
+        background-color: black;
+        color: white;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 35px;
+       justify-content: center;
+       display: flex;
+      }
+      
+        nav ul {
+            list-style-type: none;
+            margin-top: 0;
+            padding: 0;
+            /* justify-content: center; */
+        }
+        #h{
+        color: black;
+        text-align: center; 
+        font-size: xx-large;
+        margin-top: 55px;
+      }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+            padding-bottom: 8px;
+            font-size: larger;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            /* margin-left: 50px; */
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: 20px;
+  text-align: center;
+  font-family: arial;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 5px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 35%;
+  margin-left: auto;
+  margin-bottom: 5px;
+  font-size: 18px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.container{
+    display: flex;
+    /* grid-template-columns: auto auto auto auto; */
+}
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: white;
+}
+
+button:hover, a:hover {
+  color: black;
+  background: white;
+}
+#foot {
+        background-color: black;
+        color: white;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 5px;
+        height: 95px;
+      }
+
+      /* Float four columns side by side */
+/* .column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+} */
+
+/* Remove extra left and right margins, due to padding */
+/* .row {margin: 0 -5px;}  */
+
+/* Clear floats after the columns */
+ /* .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}  */
+
+
+/* Responsive columns */
+
+ @media screen and(min-width:350px) and (max-width: 767px)    {
+               
+               .container {
+                       width: 100%;
+                       display: grid;
+                       grid-template-columns: auto auto;
+                      
+                   }
+               }
+               @media screen and (min-width: 768px) and (max-width: 1023px) {
+                .container {
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: auto auto auto;
+                }
+                        }
+
+                        @media screen and (min-width: 1024px)  {
+               
+               .container {
+                       width: 100%;
+                       display: grid;
+                       grid-template-columns: auto auto auto auto;
+                      
+                   }
+               }
+</style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="registration.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="contactus.html">Contact</a></li>
+            <li><a href="aboutus.html">About</a></li>
+        </ul>
+    </nav>
+<h2 style="text-align:center;" id="h">Products</h2>
+<div class="container row one" >
+  <div class="column">
+<div class="card">
+  <img src="images/fitness-ankle-buckle.jpeg" height="250px" alt="John" style="width:100%;">
+  <p class="title">Adjustable Ankle Wearables 1.5KG Each</p>
+  <p>&#8377;859</p>
+  <div style="margin: 24px 0;">
+    <button> <a href="confirmation.html">Buy Now</a> </button>
+  </div>
+</div>
+  </div>
+  <div class="column">
+  <div class="card">
+    <img src="images/handgrip.webp" height="250px" alt="John" style="width:100%">
+    <p class="title">Hand Grip Adjustable Extended Handle Rehabilitation</p>
+    <p>&#8377;559</p>
+    <div style="margin: 24px 0;">
+      <button> <a href="confirmation.html">Buy Now</a> </button> 
+    </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+        <img src="images/Handwristforearm.jpg" height="250px" alt="John" style="width:100%">
+  
+        <p class="title">Hand Wrist Forearm Strengthener,Adjustable Handgrip</p>
+        <p>&#8377;559</p>
+        <div style="margin: 24px 0;">
+          <button> <a href="confirmation.html">Buy Now</a> </button>
+        </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+            <img src="images/dumbell.webp" height="270px" alt="John" style="width:100%">
+      
+            <p class="title">Adjustable Dumbell Set 2KGS Each</p>
+            <p style="margin: 5px;">&#8377;559</p>
+            <div style="margin: 24px 0;">
+              <button> <a href="confirmation.html">Buy Now</a> </button> 
+            </div>
+            </div>
+          </div>
+
+<div class="column">
+    <div class="card">
+      <img src="images/wristsupporter.webp" height="250px" alt="John" style="width:100%">
+
+      <p class="title">Wrist Supporter</p>
+      <p>&#8377;559</p>
+      <div style="margin: 24px 0;">
+        <button> <a href="confirmation.html">Buy Now</a> </button> 
+      </div>
+      </div>
+      </div>
+      <div class="column">
+      <div class="card">
+        <img src="images/abdominalbinder.jpg" height="250px" alt="John" style="width:100%">
+  
+        <p class="title">Waist Supporter</p>
+        <p>&#8377;559</p>
+        <div style="margin: 24px 0;">
+          <button> <a href="confirmation.html">Buy Now</a> </button> 
+        </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+            <img src="images/shouldersupport.jpg" height="250px" alt="John" style="width:100%">
+      
+            <p class="title">Shoulder Supporter</p>
+            <p>&#8377;559</p>
+            <div style="margin: 24px 0;">
+             <button> <a href="confirmation.html">Buy Now</a> </button>
+               
+            </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+                <img src="images/gymbag.jpg" height="250px" alt="John" style="width:100%">
+          
+                <p class="title">Gym Bag</p>
+                <p>&#8377;559</p>
+                <div style="margin: 24px 0;">
+                  <button> <a href="confirmation.html">Buy Now</a> </button> 
+                </div>
+                </div>
+    </div>
+</div>
+<footer id="foot" style="height: 35px; ">
+  <center><p>&copy; 2024 GetFit GYM. All rights reserved.</p></center>
+  
+</footer>
+</body>
+</html>

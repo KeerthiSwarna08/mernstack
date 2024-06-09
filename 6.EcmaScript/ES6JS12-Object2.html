@@ -1,0 +1,25 @@
+<html>
+    <head>
+         <title>JavaScriptProgramming</title>
+    </head>
+    <body>
+        <p id ="myram">....</p>
+        <script>            
+              var person ={
+                firstName :"Hari",
+                middlename :"W",
+                lastName :"M",
+                age : 45,
+                address: "Hyderabad",
+                item: "Laptop" ,
+        myFunction :function()
+          {
+    return this.firstName + " LastName : " +this.lastName +
+     " Addres "+this.address
+           }              }
+              // Display data from the  Object 
+                       document.getElementById("myram").innerHTML=person.myFunction();
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,186 @@
+<html>
+    <head>
+        <title>Practice</title>
+    </head>
+    <script>
+        // biggest of three numbers
+        let a=300;
+        let b=200;
+        let c=50;
+        if(a>b && a>c){
+            document.write("a is big");
+        }
+        else if(b>a && b>c){
+            document.write("b is big");
+        }else{
+            document.write("c is big");
+        }
+
+        // for loop and while loop
+        for(var i=1;i<=10;i++){
+            document.write("<br>");
+            document.write(i);
+        }
+
+        var i=11
+        while(i<=20){
+            document.write("<br>");
+            document.write(i);
+            i=i+1;
+        }
+
+        // Arrays1
+        const arr=[1,2,3,4,5];
+        for(var i=0;i<4;i++){
+            document.write("<br>");
+            document.write(arr[i]);
+        }
+        document.write(arr);
+        document.write("<br>");
+
+        // Arrays2
+        const cars=["BMW","FERRARI","MUSTANG","LAMBO","TESLA"];
+        document.write(cars);
+        cars.sort();
+        document.write("<br>");
+        document.write(cars);
+        document.write("<br>");
+        cars.reverse();
+        document.write(cars);
+
+
+        // Function1
+        function myFunction(){
+            document.write("This is my function");
+            document.write("<br>");
+        }
+        nyFunction()
+
+        // Function2
+        function display(){
+            document.write("Display function");
+        }
+
+        // function3
+        function date(){
+            document.getElementById("d").innerHTML=Date();
+        }
+
+
+        // ckeckbox validation
+        function checkboxval(){
+            const checkboxes=document.getElementsByName("checkbox");
+            let count=0;
+            for(let i=0;i<checkboxes.length;i++){
+                if(checkboxes[i].checked){
+                    count++;
+                }
+            }
+            if(count===0){
+            alert("please select checkbox");
+                return false;
+        }
+        return true;
+        }
+
+
+        // dropdown validation
+        function dropval(){
+            const country=document.getElementById("country");
+            const val=country.value;
+            if(val===""){
+                alert("select a country");
+                return false;
+            }
+            return true;
+        }
+
+        // login validation
+        function loginval(){
+        var uname=document.myform.username.value;
+        var passwd=document.myform.password.value;
+        if(uname==""||uname==null){
+            alert("User name can not be empty");
+            return false;
+        }
+        else if(passwd<6){
+            alert("Password must contain atleast 6 letters");
+            return false;
+        }
+        return true;
+        }
+
+
+        // email validation
+        function emailval(){
+            var myemail=document.myform1.email.value;
+            var atposition=myemail.indexOf('@');
+            var dotposition=myemail.lastIndexOf('.');
+            if(atposition<1|| dotposition<atposition+2||dotposition+2>=myemail.length){
+                alert("enter valid email address");
+                return false;
+            }
+            return true;
+        }
+
+        // mouseover 
+        function mouseover(){
+            document.getElementById('h').innerHTML="After mouse over"
+        }
+
+        //functions
+        function add(a,b){
+            document.write(a+b);
+        }
+        add(100,1);
+
+        add1 = (a,b)=>document.write(a+b);
+        add1(10,20);
+
+        add2=(a,b)=>{
+            document.write(a+b);
+        }
+        add2(45,45);
+    </script>
+    <body>
+        <h4 onmouseover="mouseover()" id="h">These are funtions</h4>
+        <button onclick="display()">Click me</button>
+        <p id="d">...</p>
+        <button onclick="date()">click me</button>
+
+        <!-- checkbox validation  -->
+        <form action="loginsuccess.html" onsubmit=" return checkboxval()">
+        Checkboxes:
+        <input type="checkbox" name="checkbox" id="">Hi
+        <input type="checkbox" name="ckeckbox" id="">Hello
+        <input type="checkbox" name="checkbox" id="">Kitty
+        <input type="checkbox" name="checkbox" id="">Meow
+        <input type="submit"  value="submit">
+    </form>
+
+    <!-- dropdown validation -->
+    <form action="success.html" onsubmit="return dropval()">
+        <label for="country">
+    <select name="country" id="country" required>
+        <option value="">select a country</option>
+        <option value="newyork">newyork</option>
+        <option value="france">france</option>
+    </select>
+</label>
+<input type="submit" value="submit">
+</form>
+
+<!-- login validation  -->
+<form name="myform" action="loginsuccess.html" onsubmit="return loginval(this)">
+Username: <input type="text" name="username" id="">
+Password: <input type="password" name="password" id="">
+<input type="submit" value="submit">
+</form>
+
+<!-- email validation  -->
+<form action="success.html" name="myform1" onsubmit="return emailval()">
+    email: <input type="text" name="email" required>
+    <input type="submit" value="submit">
+</form>
+    </body>
+</html>
